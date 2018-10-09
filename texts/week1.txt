@@ -1,6 +1,6 @@
 my backend development run
 
-In the FIRST WEEK i focused on learning and practicing php
+In the FIRST WEEK following the [backend development roadmap](https://github.com/kamranahmedse/developer-roadmap#-back-end-roadmap) i focused on learning and practicing php
 Revised the language, since i already knew C it was a fairly quick task.
 Learned the web aspects of the language, the things that you dont learn with C, like the GET and POST requests.
 Wrote a simple program to practice what i learned, it scrapps the reddit front page and builds a minimalistic version of it. i called it MRFP, it stands for minimal reddit front page.
