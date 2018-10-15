@@ -1,0 +1,9 @@
+In the SECOND WEEK following the [backend development roadmap](https://github.com/kamranahmedse/developer-roadmap#-back-end-roadmap) i focused on learning and practicing sql 
+
+Studied the basics of SQL watching some Lynda.com courses
+Practiced CRUD in the MySQL command line
+Tried to import the imdb dataset (half a gigabyte) with phpmyadmin and failed
+Learned to use the basics of Pandas, a Python library for data manipulation. i used it to format and remove some unecessary data from the imdb dataset.
+Learned to import a large dataset with SQL using the command "LOAD DATA INFILE"
+Studied PHP MySQLi and built a simple login application that uses CRUD, in the process i practiced and learned some things about web usages of php, such as data hashing and php sessions
+Also researched a little about data encryption
