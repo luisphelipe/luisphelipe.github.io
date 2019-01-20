@@ -1,9 +1,0 @@
-In the FIRST WEEK following the [backend development roadmap](https://github.com/kamranahmedse/developer-roadmap#-back-end-roadmap) i focused on learning and practicing php
-
-Revised the language, since i already knew C it was a fairly quick task.
-Learned the web aspects of the language, the things that you dont learn with C, like the GET and POST requests.
-Wrote a simple program to practice what i learned, it scrapps the reddit front page and builds a minimalistic version of it. i called it MRFP, it stands for minimal reddit front page.
-Then learned how to use composer, PHP-FIG PSRs and the MVC architectural pattern, i also studied the OOP syntax, that is also very similar to other languages that i already knew.
-Refactored the code of MRFP to follow the PHP code conventions and the OOP paradigm, i also separetad the code acording to the MVC.
-After that, i distributed the model of the MRFP into composer, for the practice of it.
-The next move was to learn about testing and write some of them the application that i made, then i watch some talks about Unit Testing and TDD, learned about appunit and wrote some simple tests for the MRFP Model.

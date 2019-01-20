@@ -1,1 +1,0 @@
-I am a C programmer learning backend development with PHP
