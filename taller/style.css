@@ -65,5 +65,22 @@ footer {
 }
 
 footer>a {
-  margin-left: 3rem;
+  margin: 0 1.5rem;
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  main {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  footer>a {
+    margin: 0 .5rem;
+  }
 }
