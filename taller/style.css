@@ -18,11 +18,13 @@ body {
 }
 
 main {
-  margin: 2rem;
   padding: 2rem;
   width: 70%;
   background-color: white;
   border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -60%);
 }
 
 h1 {
@@ -78,7 +80,7 @@ footer>a {
   main {
     margin: 0;
     padding: 1rem;
-    width: 100%;
+    width: calc(90% - 2rem);
   }
 
   footer>a {
