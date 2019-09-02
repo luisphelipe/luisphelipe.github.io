@@ -28,12 +28,13 @@ main {
 h1 {
   color: #2f343b;
   font-size: 32px;
-  letter-spacing: -0.8px;
+  letter-spacing: 1rem;
   line-height: 1.5;
 
   margin: 0;
   margin-bottom: 15px;
   font-family: "Alegreya", sans-serif;
+  font-style: italic;
   font-weight: bold;
 }
 
