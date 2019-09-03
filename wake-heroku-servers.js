@@ -2,7 +2,7 @@ const serverList = [
   "https://receipe-reciepe-recipe-app.herokuapp.com/",
   "https://rails-graphql-todo.herokuapp.com/",
   "https://luisphelipe-express-todo.herokuapp.com/",
-  "http://arcane-island-39787.herokuapp.com/"
+  "https://arcane-island-39787.herokuapp.com/"
 ];
 
 console.log(
