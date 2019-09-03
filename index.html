@@ -1,76 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Luis Phelipe</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Luis Phelipe</h1>
+      <h1>Luis Phelipe</h1>
     </header>
 
     <article>
-        <h2>About</h2>
-        <p>
-            I'm a junior backend web developer on a quest to become full stack. Outside tech, I like to practice boulder
-            climbing, cycling and hiking with my friends.
-        </p>
+      <h2>About</h2>
+      <p>
+        I'm a Fullstack web developer from Curitiba - PR.
+      </p>
     </article>
     <article>
-        <h2>Tech</h2>
-        <p>
-            I personally prefer <a href="#projects">Rails</a> for it's simplicity, but i also use <a
-                href="#projects">Laravel</a>. I have done some GraphQL API development using Rails, so I'm comfortable
-            with that.
-        </p>
-        <p>
-            I know JS, and I've learned the basics of <a href="#projects">React</a> recently.
-        </p>
-        <p>
-            Check out my <a href="/resume.pdf">Resume</a> for more specific info.
-        </p>
+      <h2>Tech</h2>
+      <p>
+        I primarily know <a href="#projects">Rails</a> and have some practice
+        with <a href="#projects">Laravel</a>. I have done API development
+        following REST and GraphQL, and I follow TDD
+        <i>- when I'm not in a hurry</i>.
+      </p>
+      <p class="mt-1">
+        Lately all I've been doing is practice JS, and I just discovered how fun
+        the MERN stack can be... I've learned React, Express and Mongo, and I'm
+        planning to focus on this stack from now on.
+      </p>
+      <p class="mt-1">
+        Check out my recent projects or my <a href="/resume.pdf">Resume</a> for
+        more specific info.
+      </p>
     </article>
     <article id="projects">
-        <h2>Projects</h2>
-        <section id="rails">
-            <h3><a href="https://react-graphql-todo.netlify.com/login/">Todo</a> <a
-                    href="https://github.com/luisphelipe/todo">src</a><small>rails</small><small>react</small><small>graphql</small><small>oauth2</small><small>TDD</small>
-            </h3>
-            <p>Simple todo to practice GraphQL and React
-        </section>
-        <section id="laravel">
-            <h3><a href="http://arcane-island-39787.herokuapp.com/">Agenda</a> <a
-                    href="https://github.com/luisphelipe/agenda">src</a><small>laravel</small><small>bootstrap</small>
-            </h3>
-            <p>It's a web agenda made to help my mother.</p>
-        </section>
-        <section id="react">
-            <h3><a href="https://draughts.netlify.com/">Draughts</a> <a
-                    href="https://github.com/luisphelipe/react_draughts">src</a><small>react</small></h3>
-            <p>Simple checkers game.</p>
-        </section>
-        <section id="react">
-            <h3><a href="https://automata.netlify.com/">Automata</a> <a
-                    href="https://github.com/luisphelipe/react_automata">src</a><small>react</small></h3>
-            <p>Interative Conway's game of life.</p>
-        </section>
+      <h2>Projects</h2>
+      <p>
+        Note: All my apps are hosted at Netlify and Heroku,
+        <i>since it's free</i>. Also for this reason, the first API request will
+        take up to 10 seconds to respond, since Heroku as to <i>wake up</i> the
+        server.
+      </p>
+
+      <section id="express" class="mt-2">
+        <h3>
+          MERN-Recipe-App
+          <a href="https://github.com/luisphelipe/recipe-app-web">src</a>
+          <a href="https://recipe-web-app.netlify.com/">live</a>
+        </h3>
+        <p>
+          This was a weekend project, It's supposed to help you find recipes
+          with the ingredients at your disposal. I learned more about Mongodb
+          and I also developed a Python scraper to <i>steal</i> recipes.
+        </p>
+      </section>
+      <section id="express" class="mt-2">
+        <h3>
+          MERN-Stack-Todo
+          <a href="https://github.com/luisphelipe/express-todo">src</a>
+          <a href="https://mern-todo-app.netlify.com/login/">live</a>
+        </h3>
+        <p>
+          Yet another Todo-list app, this iteration was to practice Express and
+          Mongo. I also wanted to focus more on the design this time, It was fun
+          and made me proud.
+        </p>
+      </section>
+
+      <section id="rails" class="mt-2">
+        <h3>
+          Rails-Graphql-React-Todo
+          <a href="https://github.com/luisphelipe/todo">src</a>
+          <a href="https://react-graphql-todo.netlify.com/login/">live</a>
+        </h3>
+        <p>
+          Simple Todo-list app to practice GraphQL and React-router, using
+          OAuth2 authentication, implemented
+          <i>with the help of third party gems</i> over a Graphql Schema... and
+          following TDD.
+        </p>
+      </section>
+
+      <section id="laravel" class="mt-2">
+        <h3>
+          Laravel-Agenda
+          <a href="https://github.com/luisphelipe/agenda">src</a>
+          <a href="http://arcane-island-39787.herokuapp.com/">live</a>
+        </h3>
+        <p>
+          Yeah, it's a web agenda, it's purpose is to schedule appointments. I
+          used Laravel, Bootstrap and some custom CSS to make it the way that I
+          wanted. It is responsive <i>like all my other projects</i> and it also
+          made me a little proud at the time.
+        </p>
+      </section>
+      <section id="react" class="mt-2">
+        <h3>
+          React-Draughts
+          <a href="https://github.com/luisphelipe/react_draughts">src</a>
+          <a href="https://draughts.netlify.com/">live</a>
+        </h3>
+        <p>
+          Simplified Checkers game made with React, I made the board rotate
+          based on current player, just more React practice.
+        </p>
+      </section>
+
+      <section id="react" class="mt-2">
+        <h3>
+          React-Automata
+          <a href="https://github.com/luisphelipe/react_automata">src</a>
+          <a href="https://automata.netlify.com/">live</a>
+        </h3>
+        <p>
+          Interative Conway's game of life. I wanted to code this on the browser
+          for a long time, React finally made it possible. In this project I
+          learned that I can code simple simulations/games using HTML+CSS as
+          graphics
+        </p>
+      </section>
     </article>
     <article>
-        <h2>Contact</h2>
-        <section>
-            <p>+55 (41) 98729-1399</p>
-            <p>luiper@alunos.utfpr.edu.br</p>
-            <p><a href="https://github.com/luisphelipe">Github</a></p>
-            <p><a href="https://www.linkedin.com/in/luis-phelipe-67996313b/">LinkedIn</a></p>
-            <p><a href="resume.pdf">Resume</a></p>
-        </section>
+      <h2>Contact</h2>
+      <section>
+        <p>+55 (41) 98729-1399</p>
+        <p>luiper@alunos.utfpr.edu.br</p>
+        <p><a href="https://github.com/luisphelipe">Github</a></p>
+        <p>
+          <a href="https://www.linkedin.com/in/luis-phelipe-67996313b/"
+            >LinkedIn</a
+          >
+        </p>
+        <p><a href="resume.pdf">Resume</a></p>
+      </section>
     </article>
-</body>
-
+  </body>
 </html>
