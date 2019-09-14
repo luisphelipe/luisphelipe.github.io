@@ -17,20 +17,21 @@
     <header>
       <h1>Luis Phelipe</h1>
     </header>
-
     <article>
       <h2>About</h2>
-      <p>
-        I'm a Fullstack web developer from Curitiba - PR.
+      <p class="mt-1">
+        I'm a Fullstack web developer from Curitiba - PR. I enjoy learning stuff
+        and getting good. Outside tech, I like to ride my bicycle and climb in
+        the boulder gym. I also used to play video-games.
       </p>
     </article>
     <article>
       <h2>Tech</h2>
-      <p>
+      <p class="mt-1">
         I primarily know <a href="#projects">Rails</a>, and I have some practice
         with <a href="#projects">Laravel</a>. I have done API development
         following REST and GraphQL, and I also follow TDD
-        <i>- when I'm not in a hurry</i>.
+        <i>when I'm not in a hurry</i>.
       </p>
       <p class="mt-1">
         Lately all I've been doing is practice JS, and I just discovered how fun
@@ -44,12 +45,20 @@
     </article>
     <article id="projects">
       <h2>Projects</h2>
-      <p>
-        Note: All my apps are hosted at Netlify and Heroku,
-        <i>since it's free</i>. Also for this reason, the first API request may
-        take up to 10 seconds to respond, since Heroku as to <i>wake up</i> the
-        server.
-      </p>
+      <section id="react-native" class="mt-1">
+        <h3>
+          React-Native-Agenda
+          <a href="https://github.com/luisphelipe/react-native-agenda">src</a>
+        </h3>
+        <p>
+          This is my first project using react-native, It's a small - 3 screens
+          - project, but I learned enough from it. I practiced react-navigation
+          with both Drawer and Stack, ContextAPI, and used some of react-native
+          community libraries. I also had to change my entire setup to work
+          efficiently, I finally fully switched to Vim, since VSCode was taking
+          too much of my laptop memory.
+        </p>
+      </section>
       <section id="react" class="mt-2">
         <h3>
           React-Kanban
@@ -65,18 +74,6 @@
       </section>
       <section id="express" class="mt-2">
         <h3>
-          MERN-Recipe-App
-          <a href="https://github.com/luisphelipe/recipe-app-web">src</a>
-          <a href="https://recipe-web-app.netlify.com/">live</a>
-        </h3>
-        <p>
-          This was a weekend project, It's supposed to help you find recipes
-          with the ingredients at your disposal. I learned more about Mongodb
-          and I also developed a Python scraper to <i>steal</i> recipes.
-        </p>
-      </section>
-      <section id="express" class="mt-2">
-        <h3>
           MERN-Stack-Todo
           <a href="https://github.com/luisphelipe/express-todo">src</a>
           <a href="https://mern-todo-app.netlify.com/login/">live</a>
@@ -87,7 +84,18 @@
           and made me proud.
         </p>
       </section>
-
+      <section id="express" class="mt-2">
+        <h3>
+          MERN-Recipe-App
+          <a href="https://github.com/luisphelipe/recipe-app-web">src</a>
+          <a href="https://recipe-web-app.netlify.com/">live</a>
+        </h3>
+        <p>
+          This was a weekend project, It's supposed to help you find recipes
+          with the ingredients at your disposal. I learned more about Mongodb
+          and I also developed a Python scraper to <i>steal</i> recipes.
+        </p>
+      </section>
       <section id="rails" class="mt-2">
         <h3>
           Rails-Graphql-React-Todo
