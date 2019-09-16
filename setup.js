@@ -4,7 +4,6 @@ const options = {
   toolbar: false,
   tooltip: false,
   movable: false,
-  rotatable: false,
   scalable: false,
   transition: false,
   loading: false,

@@ -19,7 +19,7 @@
 }
 
 .laravel {
-  color: #F05340;
+  color: #f05340;
 }
 
 .graphql {
@@ -96,6 +96,11 @@ h3 {
 
 h3 {
   display: flex;
+  flex-wrap: wrap;
+}
+
+h3 > span.title {
+  margin-right: 1rem;
 }
 
 a {
@@ -151,7 +156,6 @@ img {
 }
 
 .links {
-  margin-left: 1rem;
   position: relative;
   top: -2px;
 }
@@ -162,5 +166,6 @@ section > p {
 
 .contact-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
