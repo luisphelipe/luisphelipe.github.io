@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Luis Phelipe</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="./node_modules/viewerjs/dist/viewer.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css"
+    />
+    <script src="./node_modules/viewerjs/dist/viewer.min.js"></script>
+    <script src="./setup.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css?family=Inconsolata"
       rel="stylesheet"
@@ -19,36 +26,47 @@
     </header>
     <article>
       <h2>About</h2>
-      <p class="mt-1">
-        I'm a Fullstack web developer from Curitiba - PR. I enjoy learning stuff
-        and getting good. Outside tech, I like to ride my bicycle and climb in
-        the boulder gym. I also used to play video-games.
-      </p>
+      <div class="pwrapper">
+        <p>
+          I'm a Fullstack web developer from Curitiba - PR. I enjoy learning
+          stuff and getting good at everything that I do. Outside tech, I like
+          to ride my bicycle and climb in the boulder gym. I also used to play
+          video-games.
+        </p>
+      </div>
     </article>
     <article>
       <h2>Tech</h2>
-      <p class="mt-1">
-        I primarily know <a href="#projects">Rails</a>, and I have some practice
-        with <a href="#projects">Laravel</a>. I have done API development
-        following REST and GraphQL, and I also follow TDD
-        <i>when I'm not in a hurry</i>.
-      </p>
-      <p class="mt-1">
-        Lately all I've been doing is practice JS, and I just discovered how fun
-        the MERN stack can be... I've learned React, Express and Mongo, and I'm
-        planning to focus on this stack from now on.
-      </p>
-      <p class="mt-1">
-        Check out my recent projects or my <a href="/resume.pdf">Resume</a> for
-        more specific info.
-      </p>
+      <div class="pwrapper">
+        <p>
+          I primarily know <span class="rails">Rails</span>, and I have some
+          practice with <span class="laravel">Laravel</span>. I have done API
+          development following both REST and
+          <span class="graphql">GraphQL</span>. And I <i>sometimes</i> work with
+          TDD.
+        </p>
+        <p class="mt-1">
+          Lately all I've been doing is practice
+          <span class="javascript">JS</span>, and I just discovered how fun the
+          MERN stack can be... I've learned <span class="react">React</span>,
+          <span class="express">Express</span> and
+          <span class="mongo">Mongo</span>, and I'm planning to focus on this
+          stack from now on.
+        </p>
+        <p class="mt-1">
+          Check out my recent projects or my
+          <a href="/resume.pdf">Resume</a> for more specific info.
+        </p>
+      </div>
     </article>
     <article id="projects">
       <h2>Projects</h2>
       <section id="react-native" class="mt-1">
         <h3>
-          React-Native-Agenda
-          <a href="https://github.com/luisphelipe/react-native-agenda">src</a>
+          <span class="react">React-Native</span>-Agenda
+          <div class="links">
+            <a href="https://github.com/luisphelipe/react-native-agenda">src</a>
+          </div>
         </h3>
         <p>
           This is my first project using react-native, It's a small - 3 screens
@@ -58,12 +76,72 @@
           efficiently, I finally fully switched to Vim, since VSCode was taking
           too much of my laptop memory.
         </p>
+        <ul id="native-agenda-gallery" class="thumbnails">
+          <li>
+            <img
+              src="./assets/native-agenda_1.png"
+              class="thumbnail"
+              alt="React Native Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/native-agenda_2.png"
+              class="thumbnail"
+              alt="React Native Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/native-agenda_3.png"
+              class="thumbnail"
+              alt="React Native Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/native-agenda_4.png"
+              class="thumbnail"
+              alt="React Native Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/native-agenda_5.png"
+              class="thumbnail"
+              alt="React Native Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/native-agenda_6.png"
+              class="thumbnail"
+              alt="React Native Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/native-agenda_7.png"
+              class="thumbnail"
+              alt="React Native Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/native-agenda_8.png"
+              class="thumbnail"
+              alt="React Native Agenda"
+            />
+          </li>
+        </ul>
       </section>
       <section id="react" class="mt-2">
         <h3>
-          React-Kanban
-          <a href="https://github.com/luisphelipe/react-kanban">src</a>
-          <a href="https://react-kanban.netlify.com/">live</a>
+          <span class="react">React</span>-Kanban
+          <div class="links">
+            <a href="https://github.com/luisphelipe/react-kanban">src</a>
+            <a href="https://react-kanban.netlify.com/">live</a>
+          </div>
         </h3>
         <p>
           Kanban board for my personal usage. I just started this, and I plan to
@@ -71,36 +149,147 @@
           implement <i>Projects</i>, where multiple people could collaborate
           <i>just like your everyday kanban tool</i>
         </p>
+        <ul id="kanban-gallery" class="thumbnails">
+          <li>
+            <img
+              src="./assets/kanban_1.png"
+              class="thumbnail"
+              alt="Kanban Board"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/kanban_2.png"
+              class="thumbnail"
+              alt="Kanban Board"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/kanban_3.png"
+              class="thumbnail"
+              alt="Kanban Board"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/kanban_4.png"
+              class="thumbnail"
+              alt="Kanban Board"
+            />
+          </li>
+        </ul>
       </section>
       <section id="express" class="mt-2">
         <h3>
-          MERN-Stack-Todo
-          <a href="https://github.com/luisphelipe/express-todo">src</a>
-          <a href="https://mern-todo-app.netlify.com/login/">live</a>
+          <span class="javascript">MERN-Stack</span>-Todo
+          <div class="links">
+            <a href="https://github.com/luisphelipe/express-todo">src</a>
+            <a href="https://mern-todo-app.netlify.com/login/">live</a>
+          </div>
         </h3>
         <p>
           Yet another Todo-list app, this iteration was to practice Express and
           Mongo. I also wanted to focus more on the design this time, It was fun
           and made me proud.
         </p>
+        <ul id="mern-todo-gallery" class="thumbnails">
+          <li>
+            <img
+              src="./assets/mern-todo_1.png"
+              class="thumbnail"
+              alt="Mern Todo List"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/mern-todo_2.png"
+              class="thumbnail"
+              alt="Mern Todo List"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/mern-todo_3.png"
+              class="thumbnail"
+              alt="Mern Todo List"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/mern-todo_4.png"
+              class="thumbnail"
+              alt="Mern Todo List"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/mern-todo_5.png"
+              class="thumbnail"
+              alt="Mern Todo List"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/mern-todo_6.png"
+              class="thumbnail"
+              alt="Mern Todo List"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/mern-todo_7.png"
+              class="thumbnail"
+              alt="Mern Todo List"
+            />
+          </li>
+        </ul>
       </section>
       <section id="express" class="mt-2">
         <h3>
-          MERN-Recipe-App
-          <a href="https://github.com/luisphelipe/recipe-app-web">src</a>
-          <a href="https://recipe-web-app.netlify.com/">live</a>
+          <span class="javascript">MERN</span>-Recipe-App
+          <div class="links">
+            <a href="https://github.com/luisphelipe/recipe-app-web">src</a>
+            <a href="https://recipe-web-app.netlify.com/">live</a>
+          </div>
         </h3>
         <p>
           This was a weekend project, It's supposed to help you find recipes
           with the ingredients at your disposal. I learned more about Mongodb
           and I also developed a Python scraper to <i>steal</i> recipes.
         </p>
+        <ul id="recipes-gallery" class="thumbnails">
+          <li>
+            <img
+              src="./assets/recipes_1.png"
+              class="thumbnail"
+              alt="Recipes App"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/recipes_2.png"
+              class="thumbnail"
+              alt="Recipes App"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/recipes_3.png"
+              class="thumbnail"
+              alt="Recipes App"
+            />
+          </li>
+        </ul>
       </section>
       <section id="rails" class="mt-2">
         <h3>
-          Rails-Graphql-React-Todo
-          <a href="https://github.com/luisphelipe/todo">src</a>
-          <a href="https://react-graphql-todo.netlify.com/login/">live</a>
+          <span class="rails">Rails</span>-<span class="graphql">Graphql</span
+          >-<span class="react">React</span>-Todo
+          <div class="links">
+            <a href="https://github.com/luisphelipe/todo">src</a>
+            <a href="https://react-graphql-todo.netlify.com/login/">live</a>
+          </div>
         </h3>
         <p>
           Simple Todo-list app to practice GraphQL and React-router, using
@@ -109,36 +298,164 @@
           following TDD.
         </p>
       </section>
-
       <section id="laravel" class="mt-2">
         <h3>
-          Laravel-Agenda
-          <a href="https://github.com/luisphelipe/agenda">src</a>
-          <a href="http://arcane-island-39787.herokuapp.com/">live</a>
+          <span class="laravel">Laravel</span>-Agenda
+          <div class="links">
+            <a href="https://github.com/luisphelipe/agenda">src</a>
+            <a href="http://arcane-island-39787.herokuapp.com/">live</a>
+          </div>
         </h3>
         <p>
           Yeah, it's a web agenda, it's purpose is to schedule appointments. I
           used Laravel, Bootstrap and some custom CSS to make it the way that I
           wanted. It is responsive <i>like most of my projects since then</i>.
         </p>
+        <ul id="laravel-agenda-gallery" class="thumbnails">
+          <li>
+            <img
+              src="./assets/agenda_1.png"
+              class="thumbnail"
+              alt="Laravel Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/agenda_2.png"
+              class="thumbnail"
+              alt="Laravel Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/agenda_3.png"
+              class="thumbnail"
+              alt="Laravel Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/agenda_4.png"
+              class="thumbnail"
+              alt="Laravel Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/agenda_5.png"
+              class="thumbnail"
+              alt="Laravel Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/agenda_6.png"
+              class="thumbnail"
+              alt="Laravel Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/agenda_7.png"
+              class="thumbnail"
+              alt="Laravel Agenda"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/agenda_8.png"
+              class="thumbnail"
+              alt="Laravel Agenda"
+            />
+          </li>
+        </ul>
       </section>
       <section id="react" class="mt-2">
         <h3>
-          React-Draughts
-          <a href="https://github.com/luisphelipe/react_draughts">src</a>
-          <a href="https://draughts.netlify.com/">live</a>
+          <span class="react">React</span>-Draughts
+          <div class="links">
+            <a href="https://github.com/luisphelipe/react_draughts">src</a>
+            <a href="https://draughts.netlify.com/">live</a>
+          </div>
         </h3>
         <p>
           Simplified Checkers game made with React, I made the board rotate
           based on current player, just more React practice.
         </p>
+        <ul id="draughts-gallery" class="thumbnails">
+          <li>
+            <img
+              src="./assets/draughts_1.png"
+              class="thumbnail"
+              alt="React Draughts"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/draughts_2.png"
+              class="thumbnail"
+              alt="React Draughts"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/draughts_3.png"
+              class="thumbnail"
+              alt="React Draughts"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/draughts_4.png"
+              class="thumbnail"
+              alt="React Draughts"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/draughts_5.png"
+              class="thumbnail"
+              alt="React Draughts"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/draughts_6.png"
+              class="thumbnail"
+              alt="React Draughts"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/draughts_7.png"
+              class="thumbnail"
+              alt="React Draughts"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/draughts_8.png"
+              class="thumbnail"
+              alt="React Draughts"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/draughts_9.png"
+              class="thumbnail"
+              alt="React Draughts"
+            />
+          </li>
+        </ul>
       </section>
 
-      <section id="react" class="mt-2">
+      <section id="react" class="mt-2 mb-0">
         <h3>
-          React-Automata
-          <a href="https://github.com/luisphelipe/react_automata">src</a>
-          <a href="https://automata.netlify.com/">live</a>
+          <span class="react">React</span>-Automata
+          <div class="links">
+            <a href="https://github.com/luisphelipe/react_automata">src</a>
+            <a href="https://automata.netlify.com/">live</a>
+          </div>
         </h3>
         <p>
           Interactive Conway's game of life. I wanted to code this on the
@@ -146,20 +463,61 @@
           project I learned that I can code simple simulations/games using
           HTML+CSS as graphics
         </p>
+        <ul id="automata-gallery" class="thumbnails">
+          <li>
+            <img
+              src="./assets/automata_1.png"
+              class="thumbnail"
+              alt="React Automata"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/automata_2.png"
+              class="thumbnail"
+              alt="React Automata"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/automata_3.png"
+              class="thumbnail"
+              alt="React Automata"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/automata_4.png"
+              class="thumbnail"
+              alt="React Automata"
+            />
+          </li>
+          <li>
+            <img
+              src="./assets/automata_5.png"
+              class="thumbnail"
+              alt="React Automata"
+            />
+          </li>
+        </ul>
       </section>
     </article>
     <article>
       <h2>Contact</h2>
       <section>
-        <p>+55 (41) 98729-1399</p>
-        <p>luiper@alunos.utfpr.edu.br</p>
-        <p><a href="https://github.com/luisphelipe">Github</a></p>
-        <p>
-          <a href="https://www.linkedin.com/in/luis-phelipe-67996313b/"
-            >LinkedIn</a
-          >
-        </p>
-        <p><a href="resume.pdf">Resume</a></p>
+        <div class="contact-row">
+          <p>luiper@alunos.utfpr.edu.br</p>
+          <p>+55 (41) 98729-1399</p>
+        </div>
+        <div class="contact-row mt-1">
+          <p><a href="https://github.com/luisphelipe">Github</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/luis-phelipe-67996313b/"
+              >LinkedIn</a
+            >
+          </p>
+          <p><a href="resume.pdf">Resume</a></p>
+        </div>
       </section>
     </article>
   </body>
