@@ -49,7 +49,7 @@
 
 body {
   padding: 2rem 0;
-  font: 1.3rem/1.6 Hack, monospace;
+  font: 1.3rem/1.6 'Fira Mono', monospace;
   display: flex;
   flex-direction: column;
   align-items: center;
