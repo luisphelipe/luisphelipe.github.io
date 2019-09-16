@@ -1,5 +1,3 @@
-import Viewer from './viewerjs/viewer';
-
 const options = {
   button: false,
   title: false,
