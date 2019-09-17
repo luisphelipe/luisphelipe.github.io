@@ -70,13 +70,22 @@ section {
 }
 
 section {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: normal;
   text-align: center;
+  position: relative;
+  left: 4rem;
+  margin-bottom: 3rem;
+}
+
+span#me {
+  position: relative;
+  top: 4.5rem;
+  left: -8rem;
 }
 
 h2 {
@@ -131,6 +140,21 @@ a {
 @media (max-width: 900px) {
   article {
     width: 90%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+    left: auto;
+    margin-bottom: 1rem;
+  }
+
+  span#me {
+    position: relative;
+    top: auto;
+    left: auto;
   }
 }
 
