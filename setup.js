@@ -14,7 +14,6 @@ Viewer.setDefaults(options);
 const galleries = [
   'native-agenda-gallery',
   'kanban-gallery',
-  'recipes-gallery',
   'mern-todo-gallery',
   'laravel-agenda-gallery',
   'draughts-gallery',
