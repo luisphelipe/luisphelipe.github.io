@@ -14,6 +14,10 @@
 /* mongodb-color    #4DB33D */
 /* graphql-color:   #E535AB */
 
+.bolder {
+  font-weight: bolder;
+}
+
 .rails {
   /* color: #cc0000; */
   color: #c11;
@@ -103,6 +107,7 @@ h3 {
 
 h3 > span.title {
   margin-right: 1rem;
+  font-weight: bolder;
 }
 
 a {
