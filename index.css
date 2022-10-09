@@ -1,0 +1,94 @@
+:root {
+  --primary: #bbb;
+  --background: #222831;
+  --accent: #f05454;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+  padding: 40px 16px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: max(40px, 10vh);
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  opacity: 80%;
+}
+
+h1 {
+  margin-bottom: 80px;
+  font-size: 48px;
+}
+
+h2 {
+  margin-top: 80px;
+  font-size: 32px;
+}
+
+h3,
+p,
+li {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h3 {
+  margin-bottom: 8px;
+}
+
+section {
+  margin: 40px 0px;
+}
+
+p.item {
+  text-indent: 16px;
+}
+
+span.subtitle {
+  font-weight: 500;
+  display: block;
+}
+
+span.subtitle:not(:first-child) {
+  margin-top: 20px;
+}
+
+section.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.contact > div:last-child {
+  text-align: right;
+}
+
+/* tablet and above */
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
+.disabled {
+  opacity: 50%;
+}
+
+.bold {
+  font-weight: bold;
+}
